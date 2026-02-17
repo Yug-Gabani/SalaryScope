@@ -23,9 +23,6 @@ project/
 ├── predict.py
 ├── preprocess.py
 │
-├── Data_Train.csv
-├── Test_set.csv
-│
 └── ml/
     └── models/
         ├── placement_model.pkl
@@ -68,7 +65,7 @@ project/
 
 * Algorithm: XGBClassifier
 * Output: Yes / No
-* Accuracy: **87%**
+* Accuracy: **99.95%**
 
 ---
 
