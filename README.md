@@ -1,19 +1,24 @@
-# 🎓 Student Placement and Salary Prediction System
+# 🎓 SalaryScope — Student Placement & Salary Prediction System
 
-## 📌 Project Overview
+🔗 **Live Demo:** [Link](https://placement-helper-website--hiworl10.replit.app)
 
-This project uses **Machine Learning (XGBoost)** to:
+SalaryScope is a Machine Learning project that predicts:
 
-* Predict whether a student will be **Placed or Not Placed**
-* Predict the **Expected Salary** if the student is placed
+- Whether a student will be **Placed or Not Placed**
+- The **Expected Salary** if the student is placed
 
-It uses:
-
-* **XGBClassifier** → Placement Prediction
-* **XGBRegressor** → Salary Prediction
+It uses **XGBoost** for both tasks — a classifier for placement prediction and a regressor for salary prediction.
 
 ---
 
+## 📌 Overview
+
+- **XGBClassifier** → Predicts placement status (Yes / No)
+- **XGBRegressor** → Predicts expected salary
+
+The goal is to help students, colleges, and placement departments get data-driven insight into placement chances and likely compensation, based on academic and extracurricular performance.
+
+---
 ## 📂 Project Structure
 
 ```
@@ -37,81 +42,61 @@ project/
 
 ## ⚙️ Technologies Used
 
-* Python 3.11
-* Pandas
-* NumPy
-* Scikit-Learn
-* XGBoost
-* Joblib
-* Matplotlib
+- Python 3.11
+- Pandas
+- NumPy
+- Scikit-Learn
+- XGBoost
+- Matplotlib
 
 ---
 
 ## 📊 Features Used
 
-* IQ
-* CGPA
-* Previous Semester Result
-* Academic Performance
-* Communication Skills
-* Extra Curricular Score
-* Internship Experience
+- IQ
+- CGPA
+- Previous Semester Result
+- Academic Performance
+- Communication Skills
+- Extra Curricular Score
+- Internship Experience
 
 ---
 
 ## 🤖 Machine Learning Models
 
 ### 1️⃣ Placement Model
-
-* Algorithm: XGBClassifier
-* Output: Yes / No
-* Accuracy: **99.95%**
-
----
+- **Algorithm:** XGBClassifier
+- **Output:** Placed / Not Placed
+- **Accuracy:** 99.95%
 
 ### 2️⃣ Salary Model
-
-* Algorithm: XGBRegressor
-* Output: Salary Amount
-* MAE: **₹12,000**
-
----
-
-## 🚀 How to Run Project
-
-### Step 1 Install Libraries
-
-```
-pip install pandas numpy scikit-learn xgboost joblib matplotlib
-```
+- **Algorithm:** XGBRegressor
+- **Output:** Predicted salary amount
+- **MAE:** ₹12,000
 
 ---
 
-### Step 2 Train Model
+## 🚀 Getting Started
 
-```
-python train.py
-```
-
-This creates:
-
-```
-placement_model.pkl
-salary_model.pkl
+### 1. Clone the repository
+```bash
+git clone https://github.com/Yug-Gabani/SalaryScope.git
+cd SalaryScope
 ```
 
----
-
-### Step 3 Run Prediction
-
-```
-python predict.py
+### 2. Install dependencies
+```bash
+pip install -r requirement.txt
 ```
 
-Enter student details.
+### 3. Train the models
+Run the training script(s) inside the `Ml/` folder to generate the model artifacts (placement model, salary model, encoders, etc.) in `Outputs/`.
 
-Example Output:
+### 4. Run predictions
+Use the prediction script inside `Ml/` and enter student details when prompted.
 
+**Example output:**
 ```
 Placement: Yes
 Salary: 664454
@@ -119,68 +104,48 @@ Salary: 664454
 
 ---
 
-## 📈 Output Files
+## 📈 Outputs
 
-| File                   | Description                |
-| ---------------------- | -------------------------- |
-| placement_model.pkl    | Placement prediction model |
-| salary_model.pkl       | Salary prediction model    |
-| salary_importance.png  | Feature importance graph   |
-| metrics_comparison.txt | Model performance report   |
+| File                     | Description                     |
+|--------------------------|----------------------------------|
+| `placement_model.pkl`    | Trained placement prediction model |
+| `salary_model.pkl`       | Trained salary prediction model    |
+| `salary_importance.png`  | Feature importance graph           |
+| `metrics_comparison.txt` | Model performance report           |
 
 ---
 
 ## 📷 Feature Importance
 
-Shows which features affect salary most:
+Analysis shows the features that most influence predicted salary:
 
-* CGPA → Highest
-* IQ → High
-* Internship → Medium
-
----
-
-## 🎯 Project Objective
-
-Help colleges predict:
-
-* Student placement chances
-* Expected salary
-
-Useful for:
-
-* Students
-* Colleges
-* Placement departments
+- **CGPA** → Highest impact
+- **IQ** → High impact
+- **Internship Experience** → Medium impact
 
 ---
 
-## 👨‍💻 Author
+## 🎯 Objective
 
-**Name:** Yug Gabani
+SalaryScope aims to help:
 
-**Course:** B.Tech / BE (AI / ML / IT / CSE)
-
-**Year:** 2026
+- **Students** — understand their placement readiness and salary expectations
+- **Colleges** — identify students who may need additional support
+- **Placement departments** — plan and advise more effectively using data-driven predictions
 
 ---
 
 ## ✅ Future Improvements
 
-* Add Web App (Streamlit)
-* Add Real Dataset
-* Improve Accuracy to 95%
-* Deploy Online
+- [ ] Web app interface (Streamlit)
+- [ ] Integration with real-world placement datasets
+- [ ] Improved model accuracy and validation
+- [ ] Public deployment
 
 ---
 
-## ⭐ Conclusion
+## 👨‍💻 Author
 
-This project successfully predicts:
-
-* Placement Status
-* Salary
-
-Using Machine Learning.
+**[Yug Gabani](https://github.com/Yug-Gabani)**
 
 ---
